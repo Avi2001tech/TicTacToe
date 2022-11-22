@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/exit_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/exit_button"
+        android:layout_gravity="end"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/tic_tac_toe"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets the game begin ,"
+        android:textStyle="italic|bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:background="#f5fcff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:elevation="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:background="#efe"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="check"
+            app:elevation="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn2"
+            android:layout_marginEnd="5dp"
+            android:textSize="24sp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn3"
+            android:onClick="check"
+            android:textSize="24sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn4"
+            android:textSize="24sp"
+            android:layout_marginEnd="5dp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn5"
+            android:textSize="24sp"
+            android:layout_marginEnd="5dp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn6"
+            android:textSize="24sp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn7"
+            android:textSize="24sp"
+            android:layout_marginEnd="5dp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn8"
+            android:textSize="24sp"
+            android:layout_marginEnd="5dp"
+            android:onClick="check"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#000000"
+            app:elevation="10dp"
+            android:background="#efe"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btn9"
+            android:textSize="24sp"
+            android:onClick="check"/>
+    </GridLayout>
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/restart"
+        android:drawablePadding="15dp"
+        android:enabled="false"
+        app:cornerRadius="20dp"
+        app:elevation="10dp"
+        android:backgroundTint="#dbf3fa"/>
+
+
+
+
+</LinearLayout>
